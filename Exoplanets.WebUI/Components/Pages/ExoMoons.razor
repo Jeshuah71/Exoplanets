@@ -1,0 +1,46 @@
+@page "/Exomoons"
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
+<h1>Welcome to the Exomoon Page</h1>
+<p>Exomoons are moons that orbit planets outside our solar system. They are similar to moons in our solar system but
+    orbit exoplanets instead of planets like Earth, Mars, or Jupiter.</p>
+
+<!-- Link to the presentation -->
+<a href="#" @onclick:preventDefault="true" @onclick="WatchPresentation">Click here to watch the presentation</a>
+
+<!-- Placeholder for the transition effect -->
+<div id="transitionEffect"></div>
+
+@code {
+    // Method to handle clicking the presentation link
+    private async Task WatchPresentation()
+    {
+        // Create a video element
+        var video = new ElementReference();
+
+        // Add the video to the transition effect div
+        await JSRuntime.InvokeVoidAsync("playVideo", video);
+    }
+}
+
+<script>
+    function playVideo(video) {
+        // Create a video element
+        var videoElement = document.createElement('video');
+        videoElement.src = 'Blender Hyperspace Jump.mp4';
+        videoElement.style.width = '100%';
+        videoElement.style.height = '100%';
+        videoElement.controls = true;
+        videoElement.autoplay = true;
+
+        // Add the video to the transition effect div
+        document.getElementById('transitionEffect').appendChild(videoElement);
+
+        // Redirect to the presentation page after the video ends
+        videoElement.addEventListener('ended', function () {
+            // Redirect to the presentation page
+            window.location.href = 'https://www.canva.com/design/DAGCPIIq2CU/R0h9YHsAjTKKOpN-lNk97Q/edit?utm_content=DAGCPIIq2CU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton';
+        });
+    }
+</script>

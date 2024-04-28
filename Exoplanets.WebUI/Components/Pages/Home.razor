@@ -1,0 +1,39 @@
+﻿@page "/"
+<PageTitle>Exoplanets</PageTitle>
+<h1 style="font-family: 'Roboto', sans-serif; text-align: center;">Exoplanets</h1>
+<h2 style="font-family: 'Roboto', sans-serif;">What are exoplanets??</h2>
+
+<p>Exoplanets are planets located outside our solar system, orbiting stars other than our Sun. However, not all exoplanets
+are bound to a star; some roam freely through space, earning the title "rogue planets." While scientists estimate there
+could be billions of exoplanets in existence, we have confirmed over 5,200 through various detection methods. Join us as
+we embark on a journey to explore these fascinating worlds beyond our own.</p>
+
+<img src="/giant.jpg" alt="" style="width: 100; height: 150px; position: fixed; left: 350px; top: 290px;">
+<img src="/GasGiant.jpg" alt="" style="width: 200; height: 150px; position: fixed; left: 520px; top: 290px;">
+<img src="/RogueExoplanet.jpg" alt="" style="width: 200; height: 150px; position: fixed; left: 690px; top: 290px;">
+<button @onclick="NavigateToExoplanetPage" class="btn btn-primary" style="position: fixed; left: 550px; top: 470px;">Explore Exoplanets</button>
+<img src="/elementalMoon.jpg" alt="" style="width: 200; height: 150px; position: fixed; left: 1020px; top: 290px;">
+<img src="/LegendaryExomoon.jpg" alt="" style="width: 200; height: 150px; position:fixed; left: 1200px; top: 290px;">
+<img src="/MechanicalMoon.jpg" alt="" style="width: 200; height: 150px; position: fixed; left: 1370px; top: 290px;">
+<button @onclick="NavigateToExoMoonPage" class="btn btn-primary" style="position: fixed; left: 1190px; top: 470px;">Explore Exomoons</button>
+<img src="/RadicalVelocity.jpg" alt="" style="width: 200; height: 150px; position: fixed; left: 650px; top: 590px;">
+<img src="/TransitMethod.jpg" alt="" style="width: 200; height: 150px; position: fixed; left: 820px; top: 590px;">
+<img src="/Microlising.jpg" alt="" style="width: 200; height: 150px; position: fixed; left: 990px; top: 590px;">
+<button @onclick="NavigateToMethodsPage" class="btn btn-primary" style="position: fixed; left: 750px; top: 770px;">Explore Methods to Find Exoplanets</button>
+@code {
+    [Inject] NavigationManager NavigationManager { get; set; }
+
+    private void NavigateToExoplanetPage()
+    {
+        NavigationManager.NavigateTo("/exoplanets");
+    }
+    private void NavigateToExoMoonPage()
+    {
+        NavigationManager.NavigateTo("/exomoons");
+    }
+    
+    private void NavigateToMethodsPage()
+    {
+        NavigationManager.NavigateTo("/Methods");
+    }
+}

@@ -1,0 +1,37 @@
+﻿@page "/Methods"
+
+<PageTitle>Methods to Find Exoplanets</PageTitle>
+<h1 style="font-family: 'Roboto', sans-serif; text-align: center;">Methods to find Exoplanets</h1>
+<p>This page is dedicated to show the three principal methods to find planets that are beyond the solar system
+    The First method is the <strong>Transit Method</strong> which consist in observing the slight dimming of a star as a planet passes in front of it.
+    The second method is the <strong>Radial Velocity Method</strong> that detects the subble wobbles in a star caused by the gravitational pull of orbiting planets.
+    The last method is the <strong>Direct Imagine Method </strong> that consist in take actual pictures of the planets by blokying out the overwhelming light if their host stars.
+    If you want to know more about these method to find exoplanets you can choose the options depending of what do you want to know.
+ </p>
+
+<img src="/TransitMethod1.jpg" alt="" style="width: 100; height: 150px; position: fixed; left: 510px; top: 290px;">
+<img src="/TransitMethod2.jpg" alt="" style="width: 200; height: 150px; position: fixed; left: 680px; top: 290px;">
+<button @onclick="NavigateToTransitMethod" class="btn btn-primary" style="position: fixed; left: 590px; top: 470px;">Explore Transit Method</button>
+<img src="/RadialVelocity1.jpg" alt="" style="width: 200; height: 150px; position: fixed; left: 980px; top: 290px;">
+<img src="/RadialVelocity2.jpg" alt="" style="width: 200; height: 150px; position:fixed; left: 1150px; top: 290px;">
+<button @onclick="NavigateToRadialVelocityMethod" class="btn btn-primary" style="position: fixed; left: 1055px; top: 470px;">Radial Velocity Method</button>
+<img src="/DirectImagineMtehod1.jpg" alt="" style="width: 200; height: 150px; position: fixed; left: 750px; top: 590px;">
+<img src="/DirectImagineMethod2.jpg" alt="" style="width: 200; height: 150px; position: fixed; left: 920px; top: 590px;">
+<button @onclick="NavigateToDirectImagineMethod" class="btn btn-primary" style="position: fixed; left: 820px; top: 770px;">Direct Imagine Method </button>
+@code {
+    [Inject] NavigationManager NavigationManager { get; set; }
+
+    private void NavigateToTransitMethod()
+    {
+        NavigationManager.NavigateTo("/TransitMethod");
+    }
+    private void NavigateToRadialVelocityMethod()
+    {
+        NavigationManager.NavigateTo("/VelocityMethod");
+    }
+    
+    private void NavigateToDirectImagineMethod()
+    {
+        NavigationManager.NavigateTo("/ImagineMethod");
+    }
+}

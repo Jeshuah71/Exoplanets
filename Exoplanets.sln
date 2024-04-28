@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exoplanets.ConsoleUI", "Exoplanets.ConsoleUI\Exoplanets.ConsoleUI.csproj", "{2EEFFE76-EE52-4073-909B-8A97DE86ADFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exoplanets.Logic", "Exoplanets.Logic\Exoplanets.Logic.csproj", "{5EAD058A-9FE6-4065-9D18-05230676339B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exoplanets.Persistence", "Exoplanets.Persistence\Exoplanets.Persistence.csproj", "{DF8470E1-90FA-483C-8E5E-A6BC9105EA65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exoplanets.Tests", "Exoplanets.Tests\Exoplanets.Tests.csproj", "{7EB6944C-89AE-449A-895E-157EF794F685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exoplanets.WebUI", "Exoplanets.WebUI\Exoplanets.WebUI.csproj", "{45B11119-9CC8-4DC8-ADEE-A701CE08D69C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EEFFE76-EE52-4073-909B-8A97DE86ADFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EEFFE76-EE52-4073-909B-8A97DE86ADFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EEFFE76-EE52-4073-909B-8A97DE86ADFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EEFFE76-EE52-4073-909B-8A97DE86ADFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EAD058A-9FE6-4065-9D18-05230676339B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAD058A-9FE6-4065-9D18-05230676339B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAD058A-9FE6-4065-9D18-05230676339B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAD058A-9FE6-4065-9D18-05230676339B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF8470E1-90FA-483C-8E5E-A6BC9105EA65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF8470E1-90FA-483C-8E5E-A6BC9105EA65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF8470E1-90FA-483C-8E5E-A6BC9105EA65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF8470E1-90FA-483C-8E5E-A6BC9105EA65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EB6944C-89AE-449A-895E-157EF794F685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EB6944C-89AE-449A-895E-157EF794F685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EB6944C-89AE-449A-895E-157EF794F685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EB6944C-89AE-449A-895E-157EF794F685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45B11119-9CC8-4DC8-ADEE-A701CE08D69C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B11119-9CC8-4DC8-ADEE-A701CE08D69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B11119-9CC8-4DC8-ADEE-A701CE08D69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B11119-9CC8-4DC8-ADEE-A701CE08D69C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
